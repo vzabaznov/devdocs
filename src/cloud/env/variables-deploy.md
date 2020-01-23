@@ -47,10 +47,10 @@ stage:
       _merge: true
       frontend:
         default:
-          backend:
+          backend_options:
             database: 10
         page_cache:
-          backend:
+          backend_options:
             database: 11
 ```
 
