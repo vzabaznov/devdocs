@@ -202,10 +202,11 @@ To update your DNS configuration for development:
       magento-cloud ssh
       ```
 
-   -  Use the Magento CLI to change the base URL for your store.
+   -  Use the Magento CLI to change the base and secure URL for your store.
 
       ```
       php bin/magento setup:store-config:set --base-url="https://mcstaging.your-domain.com/"
+      php bin/magento config:set web/secure/base_url https://mcstaging.your-domain.com/
       ```
 
    {:.bs-callout-info}
